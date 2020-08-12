@@ -18,7 +18,6 @@ export default new Phaser.Class({
     this.add.text(350, 300, "You win! Press SPACE to restart.")
   },
   update: function () {
-
     if (cursors.space.isDown) {
       this.scene.start('mainmenu');
     }

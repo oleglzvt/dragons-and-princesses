@@ -63,7 +63,7 @@ export default new Phaser.Class({
     );
 
 
-    box.setBounce(1, 1);
+    box.setBounce(.5, .5);
     box.setCollideWorldBounds(true);
   },
   update: function () {
