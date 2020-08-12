@@ -15,7 +15,7 @@ export default new Phaser.Class({
     graphics.fillStyle(0x000000, 1);
     graphics.fillRect(0, 0, 800, 600);
 
-    this.add.text(380, 150, "Don't Mess Up With Dragon")
+    this.add.text(380, 150, "Don't Mess With The Dragon")
     this.add.text(350, 300, "- Press SPACE to start.")
     this.add.text(350, 320, "- Move with UP, DOWN, LEFT, RIGHT.")
     this.add.text(350, 340, "- Press SPACE to brake.")
