@@ -1,4 +1,5 @@
 {
+    "homepage": "https://oleglzvt.github.io/dragons-and-princesses",
     "name": "mintbean-phaserjs-template",
     "version": "1.0.0",
     "description": "Mintbean's template for PhaserJS games.",
@@ -7,6 +8,8 @@
     "license": "MIT",
     "private": true,
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "parcel src/index.html",
         "build": "parcel build src/index.html"
     },

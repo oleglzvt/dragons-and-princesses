@@ -15,10 +15,11 @@ export default new Phaser.Class({
     graphics.fillStyle(0x000000, 1);
     graphics.fillRect(0, 0, 800, 600);
 
-    this.add.text(270, 300, "Press space to start.")
-    this.add.text(270, 315, "Move with up, down, left, right.")
-    this.add.text(270, 330, "Press spacebar to brake.")
-    this.add.text(270, 345, "Collect all the stars to win.")
+    this.add.text(400, 150, "Dragons & Princesses")
+    this.add.text(350, 300, "- Press space to start.")
+    this.add.text(350, 320, "- Move with up, down, left, right.")
+    this.add.text(350, 340, "- Press spacebar to brake.")
+    this.add.text(350, 360, "- Destroy all the enemies to win.")
   },
   update: function () {
 

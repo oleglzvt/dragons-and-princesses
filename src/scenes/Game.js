@@ -1,8 +1,8 @@
 import Phaser from "phaser";
 import mp3 from "../assets/Orbital\ Colossus.mp3";
-import background from "../assets/scifi_platform_BG1.jpg";
-import tiles from "../assets/scifi_platformTiles_32x32.png";
-import star from "../assets/star.png"
+import background from "../assets/background.jpg";
+import tiles from "../assets/dragon.png";
+import star from "../assets/knight.png"
 import { accelerate, decelerate } from "../utils";
 
 let box;
@@ -18,14 +18,14 @@ export default new Phaser.Class({
     this.load.image("background", background);
 
     this.load.spritesheet('tiles', tiles, {
-      frameWidth: 32,
-      frameHeight: 32
+      frameWidth: 75,
+      frameHeight: 75
     });
 
     this.load.image("star", star);
   },
   create: function create() {
-    this.add.image(400, 300, "background");
+    this.add.image(100, 120, "background");
 
     const stars = this.physics.add.group({
       key: 'star',
